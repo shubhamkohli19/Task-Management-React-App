@@ -70,20 +70,31 @@
 @media screen and (max-width: 600px) {
   .comments {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
     align-items: center;
+    text-align: left;
   }
 
-  .project-comments li {
-    width: max-content;
+  .project-comments li{
+    text-align:left;
+    font-size: .9em;
+  }
+
+  .comment-author .avatar {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .project-comments .comment-author{
+    font-size: 18px;
   }
 
   .comment-top {
     display: flex;
     gap: 2rem;
     align-items: center;
-    padding-bottom: 1rem;
     border-bottom: 1px solid #f2f2f2;
   }
 
