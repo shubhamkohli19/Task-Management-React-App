@@ -1,7 +1,46 @@
 .App {
   display: flex;
 }
-.App .container{
+.App .container {
   flex-grow: 1;
   padding: 0 60px;
+}
+
+.App .sidebar {
+  animation: 0.3s ease-in slideInLeft;
+}
+
+.App .user-list {
+  animation: 0.3s ease-in slideInRight;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .App {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .App .container {
+    padding: 0 20px;
+    text-align: center;
+  }
 }

@@ -25,7 +25,6 @@
     margin-right: 10px;
     filter: invert(25%);
     width: 36px;
-    margin-top: -8px;
 }
 
 .navbar a{
@@ -33,3 +32,16 @@
     text-decoration: none;
     margin-right: 20px;
 }
+
+.navbar .logout-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        margin-bottom: 20px;
+    }
+    
+  }

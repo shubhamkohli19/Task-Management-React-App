@@ -26,7 +26,7 @@ const Navbar = () => {
           </>
         )}
         {user && (
-          <li>
+          <li className="logout-container">
             {!isPending && (
               <button className="btn" onClick={logout}>
                 Log Out

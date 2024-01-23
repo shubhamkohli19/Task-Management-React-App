@@ -1,8 +1,10 @@
 .project-details{
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    max-width: 1500px;
+    margin-inline: auto;
+    grid-template-columns: minmax(500px,2fr) minmax(400px,2fr);
     align-items: start;
-    grid-gap: 60px;
+    grid: 60px;
 }
 
 .project-summary{
@@ -31,6 +33,7 @@
 
 .project-summary .assigned-users{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
