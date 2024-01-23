@@ -1,50 +1,73 @@
-.user-list{
-    width: 250px;
-    min-width: 250px;
-    padding: 30px;
-    box-sizing: border-box;
-    background: #fbfbfb;
-    color: var(--heading-color)
+.user-list {
+  width: 250px;
+  min-width: 250px;
+  padding: 30px;
+  box-sizing: border-box;
+  background: #fbfbfb;
+  color: var(--heading-color);
 }
 
-.user-list h2{
-    margin-bottom: 40px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
-    font-size: 1.2em;
-    text-align: center;
+.user-list h2 {
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 1.2em;
+  text-align: center;
 }
 
-.user-list .user-list-item{
-    display: flex;
-    justify-content: flex-start;
+.user-list .user-list-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.user-list .user-list-item .user-display {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.user-list .avatar {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.user-list .online-user {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: rgb(47, 255, 61);
+  border-radius: 50%;
+  margin-top: 2px;
+  position: absolute;
+  right: 0;
+  margin: 2px 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  .user-list {
+    width: 100vw;
+    margin-top: 2rem;
     align-items: center;
-    margin: 20px auto;
+    flex-wrap: wrap;
+  }
+
+  .user-list .online-user {
+    position: static;
+    margin-left: 10px;
+  }
 }
 
-.user-list .avatar{
-    margin-right: 10px;
-    width: 40px;
-    height: 40px;
-}
+@media screen and (max-width: 600px) {
+  .user-list .user-list-item {
+    position: relative;
+  }
 
-.user-list .online-user{
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background: rgb(47, 255, 61);
-    border-radius: 50%;
-    margin-top: 2px;
-}
-
-@media screen and (max-width: 1000px){
-    .user-list {
-       width: 100vw;
-       margin-top: 2rem;
-       display: flex;
-       align-items: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
+  .user-list .online-user {
+    position: absolute;
+    right: 0;
+    margin: 2px 0; /* Adjust as needed for spacing */
+  }
 }

@@ -14,7 +14,7 @@ const Login = () => {
     <form className="auth-form" onSubmit={handleSubmit}>
       <h2>Login</h2>
       <label>
-        <span>email:</span>
+        <span>Email:</span>
         <input
           required
           type="email"
@@ -23,7 +23,7 @@ const Login = () => {
         />
       </label>
       <label>
-        <span>password:</span>
+        <span>Password:</span>
         <input
           required
           type="password"
