@@ -27,6 +27,10 @@
     width: 36px;
 }
 
+.navbar .logo span{
+    font-size: 25px;
+}
+
 .navbar a{
     color: #333;
     text-decoration: none;
@@ -42,6 +46,9 @@
 @media screen and (max-width: 600px) {
     .navbar {
         margin-bottom: 20px;
+    }
+    .navbar .logo span{
+        font-size: 15px;
     }
     
   }

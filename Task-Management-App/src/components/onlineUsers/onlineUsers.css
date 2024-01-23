@@ -54,6 +54,10 @@
     flex-wrap: wrap;
   }
 
+  .user-list .user-list-item {
+    margin-left: 30px;
+  }
+
   .user-list .online-user {
     position: static;
     margin-left: 10px;
@@ -63,11 +67,12 @@
 @media screen and (max-width: 600px) {
   .user-list .user-list-item {
     position: relative;
+    margin-left: 0px;
   }
 
   .user-list .online-user {
     position: absolute;
     right: 0;
-    margin: 2px 0; /* Adjust as needed for spacing */
+    margin: 2px 0;
   }
 }

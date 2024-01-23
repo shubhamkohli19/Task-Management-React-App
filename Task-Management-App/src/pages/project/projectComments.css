@@ -9,25 +9,34 @@
 
 .project-comments h4 {
   color: var(--heading-color);
+  margin-top: 40px;
+  font-size: 25px;
 }
 
 .project-comments li {
   padding: 16px;
-  border-radius: 4px;
+  border-radius:  0px 10px 10px 10px;
   border: 1px solid #f2f2f2;
   margin-top: 20px;
   background: white;
 }
 
+.comment-top{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
 .comment-author {
   display: flex;
+  font-size: 20px;
   align-items: center;
-  color: var(--text-color);
+  color: var(--heading-color);
 }
 
 .comment-author .avatar {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin-right: 10px;
 }
 
@@ -39,7 +48,18 @@
 
 .comment-content {
   color: var(--text-color);
+  background-color: rgb(199, 195, 190);
+  padding: 10px;
   font-size: 0.9em;
+  border-radius: 5px;
+}
+
+.add-comment{
+  margin-bottom: 30px;
+}
+
+.add-comment textarea{
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1500px) {

@@ -48,12 +48,11 @@ const ProjectComments = ({ project }) => {
                   </p>
                 </div>
               </div>
-
               <div className="comment-content">{comment.content}</div>
             </li>
           ))}
       </ul>
-      <form className='add-comment' onSubmit={handleSubmit}>
+      <form className="add-comment" onSubmit={handleSubmit}>
         <label>
           <span>Add new Comment:</span>
           <textarea

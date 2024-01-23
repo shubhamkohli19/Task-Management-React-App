@@ -12,7 +12,7 @@ const ProjectList = ({ projects }) => {
           <h4>{project.name}</h4>
           <p>Due by {project.dueDate.toDate().toDateString()}</p>
           <div className="assigned-to">
-            <ul>{ console.log(project.assignedUsersList)}
+            <ul>
               {project.assignedUsersList.map((user) => (
                 <li key={user.photoURL}>
                   <Avatar src={user.photoURL}/>

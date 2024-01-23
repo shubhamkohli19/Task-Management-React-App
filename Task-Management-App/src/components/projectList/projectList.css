@@ -8,26 +8,26 @@
 .project-list a{
     background-color: #fff;
     padding: 16px;
-    border-radius: 6px;
+    border-radius: 10px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
     text-decoration: none;
     color: inherit;
 }
 
 .project-list h4{
-    font-size: 0.9em;
+    font-size: 1.7em;
     color: var(--heading-color);
 }
 
 .project-list p{
     color: var(--text-color);
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 .project-list .assigned-to{
     margin-top: 20px;
     padding-top: 10px;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--text-color);
 }
 
 .project-list ul{
@@ -41,8 +41,8 @@
 }
 
 .project-list .avatar{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 @media screen and (max-width: 500px) {

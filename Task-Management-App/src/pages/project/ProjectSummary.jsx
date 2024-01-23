@@ -8,10 +8,10 @@ import { useNavigate } from "react-router-dom";
 const ProjectSummary = ({ project }) => {
   const { deleteDocument } = useFirestore("projects");
   const { user } = useAuthContext();
-  const navigator = useNavigate()
+  const navigator = useNavigate();
   const handleClick = (e) => {
     deleteDocument(project.id);
-    navigator('/')
+    navigator("/");
   };
   return (
     <div className="project-summary">
