@@ -73,12 +73,8 @@
     padding: 0;
     display: flex;
     align-items: center;
-    margin-left: 60px;
-    font-size: 2em;
-  }
-
-  .sidebar .user .avatar {
-    margin-right: 20px;
+    margin-left: 50px;
+    font-size: 4.5vw ;
   }
 
   .sidebar-content {
@@ -96,7 +92,7 @@
   .sidebar .links ul {
     display: flex;
     justify-content: space-evenly;
-    margin: 20px 60px 0 60px;
+    margin: 20px 60px;
   }
 
   .sidebar .links ul li {
@@ -107,8 +103,6 @@
   .sidebar .links a {
     margin: 0;
     border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 30px;
   }
 
   .sidebar .links a.active {
@@ -118,13 +112,13 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
   .sidebar .user {
-    margin-left: 25px;
+    margin-left: 20px;
+    font-size: 23px;
   }
 
   .sidebar .links ul {
     margin: 30px 20px;
-
   }
 }
