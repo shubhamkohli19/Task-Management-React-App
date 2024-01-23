@@ -15,10 +15,10 @@
 
 .project-comments li {
   padding: 16px;
-  border-radius:  0px 10px 10px 10px;
-  border: 1px solid #f2f2f2;
+  border-radius:  0px 20px 20px 20px;
   margin-top: 20px;
   background: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .comment-top{
@@ -47,11 +47,11 @@
 }
 
 .comment-content {
-  color: var(--text-color);
-  background-color: rgb(199, 195, 190);
-  padding: 10px;
+  color: white;
+  background-color: var(--primary-color);
+  padding: 20px 10px;
   font-size: 0.9em;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .add-comment{

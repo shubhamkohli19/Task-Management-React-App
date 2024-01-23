@@ -7,30 +7,35 @@
 }
 
 .project-summary{
-    background-color: #fff;
+    background-color: var(--primary-color);
     padding: 30px;
-    border-radius: 4px;
+    border-radius: 14px;
+}
+
+.project-summary .creator{
+    color: rgb(229, 229, 255);
 }
 
 .project-summary .page-title{
+    color: white;
     font-size: 2em;
 }
 
 .project-summary .due-date{
     margin: 10px 0;
     font-size: 0.9em;
-    color: var(--heading-color);
+    color: rgb(229, 229, 255);
 }
 
 .project-summary .details{
     margin: 30px 0;
-    color: var(--text-color);
+    color: white;
     line-height: 1.8em;
     font-size: 0.9em;
 }
 
 .project-summary h4{
-    color: var(--text-color);
+    color: white;
     font-size: 0.9em;
 }
 
@@ -47,3 +52,13 @@
 .project-summary .btn{
     margin-top: 10px;
 }
+
+.project-summary .btn:hover{
+    border: 2px solid white;
+}
+
+@media screen and (max-width: 600px) {
+    .project-details {
+      grid-template-columns: 1fr;
+    }
+  }

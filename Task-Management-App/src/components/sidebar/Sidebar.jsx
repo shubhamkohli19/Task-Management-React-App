@@ -3,7 +3,6 @@ import "./sidebar.css";
 import DashboardIcon from "../../assets/dashboard_icon.svg";
 import AddIcon from "../../assets/add_icon.svg";
 import { NavLink } from "react-router-dom";
-import Avatar from "../avatar/Avatar";
 import { useAuthContext } from "../../hooks/useAuthContext";
 
 const Sidebar = () => {
