@@ -121,4 +121,8 @@
   .sidebar .links ul {
     margin: 30px 20px;
   }
+
+  .sidebar .links img{
+    margin-right: 5px;
+  }
 }
